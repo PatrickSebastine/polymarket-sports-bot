@@ -1,0 +1,38 @@
+# Polymarket Sports Betting Bot - Config Template
+
+polymarket:
+  clob_host: "https://clob.polymarket.com"
+  gamma_url: "https://gamma-api.polymarket.com"
+  chain_id: 137
+
+sports:
+  enabled:
+    - NBA
+    - NFL
+    - NHL
+    - TENNIS
+  min_edge: 0.05
+  min_confidence: 0.4
+  min_liquidity: 100
+  no_trade_before_expiry_minutes: 5
+
+risk:
+  daily_loss_limit: 3.00
+  max_positions: 5
+  max_per_sport: 10.00
+  kelly_fraction: 0.25
+  max_bet_size: 5.00
+  cooldown_seconds: 60
+
+data:
+  odds_api_key: ""
+  cache_ttl_seconds: 30
+
+notifications:
+  ntfy_topic: "poly-sports-bot"
+  enabled: true
+
+logging:
+  level: "INFO"
+
+scan_interval: 60

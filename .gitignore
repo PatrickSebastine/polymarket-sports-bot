@@ -1,0 +1,8 @@
+# Polymarket Sports Betting Bot
+.env
+data/
+models/
+logs/
+__pycache__/
+*.pyc
+ Ref/
